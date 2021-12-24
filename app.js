@@ -108,7 +108,7 @@ app.use(appRouter.routes());
 app.use(routerCorrect())
 // 静态文件 - 处理矫正后的文件访问路径
 app.use(static(
-    path.join( __dirname,  './static'),
+    path.join( __dirname, './static'),
     {
       maxage: 3600000
     }
