@@ -12,8 +12,6 @@ let articleRouter = require('./manage/article');
 let userRouter = require('./manage/user');
 let messageRouter = require('./manage/message');
 let navRouter = require('./manage/nav_type');
-let scriptRouter = require('./manage/script');
-let cronRouter = require('./manage/cron');
 let linkRouter = require('./manage/link');
 let bakcupRouter = require('./manage/backup');
 let advertRouter = require('./manage/advert');
@@ -37,10 +35,6 @@ route.use(userRouter.routes()).use(userRouter.allowedMethods());
 route.use(messageRouter.routes()).use(messageRouter.allowedMethods());
 // 导航
 route.use(navRouter.routes()).use(navRouter.allowedMethods());
-// 任务
-route.use(cronRouter.routes()).use(cronRouter.allowedMethods());
-// 脚本
-route.use(scriptRouter.routes()).use(scriptRouter.allowedMethods());
 // 模板
 route.use(templateRouter.routes()).use(templateRouter.allowedMethods());
 // 外链
