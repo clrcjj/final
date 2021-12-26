@@ -113,7 +113,7 @@ let DirAdvertImgs = async (ctx, next) => {
 
 }
 // 上传图片
-let Images = async (ctx, next) => {
+let UploadImages = async (ctx, next) => {
 
 	await authToken(ctx, next, async () => {
 
