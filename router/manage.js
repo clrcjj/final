@@ -13,10 +13,8 @@ let userRouter = require('./manage/user');
 let messageRouter = require('./manage/message');
 let navRouter = require('./manage/nav_type');
 let linkRouter = require('./manage/link');
-let bakcupRouter = require('./manage/backup');
 let advertRouter = require('./manage/advert');
 let configRouter = require('./manage/config');
-let templateRouter = require('./manage/template');
 
 
 // 登录
@@ -35,12 +33,8 @@ route.use(userRouter.routes()).use(userRouter.allowedMethods());
 route.use(messageRouter.routes()).use(messageRouter.allowedMethods());
 // 导航
 route.use(navRouter.routes()).use(navRouter.allowedMethods());
-// 模板
-route.use(templateRouter.routes()).use(templateRouter.allowedMethods());
 // 外链
 route.use(linkRouter.routes()).use(linkRouter.allowedMethods());
-// 备份
-route.use(bakcupRouter.routes()).use(bakcupRouter.allowedMethods());
 // 广告
 route.use(advertRouter.routes()).use(advertRouter.allowedMethods());
 // 配置
