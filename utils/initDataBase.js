@@ -3,7 +3,7 @@ MongoClient = mongodb.MongoClient,
 config = require('./config.js'),
 dbConfig = config.project;
 
-let connectURL = 'mongodb://127.0.0.1:27017';
+let connectURL = 'mongodb://172.21.2.236:27017';
 
 let client = MongoClient.connect(connectURL, { useNewUrlParser: true, useUnifiedTopology: true });
 
